@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="images/ariesfavicon.jpg" type="images/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/videogallery.css">
+    <title>Aries Video Gallery</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/ariesicon.jpg" alt="Click Here to return to homepage" title="Click Here"></a>
+        <h2>Aries</h2>
+        <button id="showNavigation" data-visible="false"></button>
+        <i onclick="showMenu()" id="hamburger-icon" class="fa-solid fa-bars"></i>
+        <i onclick="hideMenu()" id="x-icon" class="fa-solid fa-xmark"></i>
+        <nav id="navigation" data-visible="false">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="imagegallery.html">Image Gallery</a></li>
+                <li><a href="videogallery.html">Video Gallery</a></li>
+                <li><a href="carousel.html">Image Carousel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav>
+        <ul>
+            <ul>
+                <li><a href="#racecar">RACECAR</a></li>
+                <li><a href="#interview">INTERVIEW</a></li>
+                <li><a href="#believeinmetour">BELIEVE IN ME TOUR</a></li>
+                <li><a href="#tourvlog">TOUR VLOG</a></li>
+                <li><a href="#mrfantastic">mr. FANTASTIC</a></li>
+            </ul>
+        </ul>
+    
+    </nav>
+
+    <main>
+        <article id="racecar">
+            <h4>RACECAR</h4>
+            <div class="videowrapper"><iframe src="https://www.youtube.com/embed/opANrXefcqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div class="caption"></div>
+        </article>
+        <article id="interview">
+            <h4>INTERVIEW</h4>
+            <div class="videowrapper"><iframe src="https://www.youtube.com/embed/LpfjGevJDgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                
+            <div class="caption"></div>
+        </article>
+        <article id="believeinmetour">
+            <h4>BELIEVE IN ME TOUR</h4>
+            <div class="videowrapper"><iframe src="https://www.youtube.com/embed/PAq6bZuZhys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                
+            <div class="caption"></div>
+        </article>
+        <article id="tourvlog">
+            <h4>TOUR VLOG</h4>
+            <div class="videowrapper"><iframe src="https://www.youtube.com/embed/oLx_3JcAJec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                
+            <div class="caption"></div>
+        </article>
+        <article id="mrfantastic">
+            <h4>mr. FANTASTIC</h4>
+            <div class="videowrapper"><iframe src="https://www.youtube.com/embed/1zrKM01rBkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                
+            <div class="caption"></div>
+        </article>
+
+        <div><button onclick="topFunction()" id="cornerBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button></div>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright"></span> Eric Lico</p>
+    </footer>
+    
+    <script src="js/scripts.js"></script>
+    <script src="js/videogallery.js"></script>
+</body>
+</html>
+
+<div id="primary-navigation" class="navmenu primary-nav"></div>

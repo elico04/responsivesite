@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/carousel.css">
+    <title>Aries Slide Show</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/ariesicon.jpg" alt="Click Here to return to homepage" title="Click Here"></a>
+        <h2>Aries</h2>
+        <button id="showNavigation" data-visible="false"></button>
+        <i onclick="showMenu()" id="hamburger-icon" class="fa-solid fa-bars"></i>
+        <i onclick="hideMenu()" id="x-icon" class="fa-solid fa-xmark"></i>
+        <nav id="navigation" data-visible="false">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="imagegallery.html">Image Gallery</a></li>
+                <li><a href="videogallery.html">Video Gallery</a></li>
+                <li><a href="carousel.html">Image Carousel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="imagecarousel">
+                <div class="image fadeout"><img src="images/image-carousel/aries.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/image-carousel/aries-1.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/image-carousel/aries-2.webp" alt=""></div>
+                <div class="image fadeout"><img src="images/image-carousel/aries-3.png" alt=""></div>
+                <div class="image fadeout"><img src="images/image-carousel/aries-sayonana-video.jpg" alt=""></div>
+                <div class="prev" onclick="showImage(-1)"><i class="fa-solid fa-angles-left"></i></div>
+                <div class="next" onclick="showImage(1)"><i class="fa-solid fa-angles-right"></i></div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="copyright"></span> Eric Lico</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>

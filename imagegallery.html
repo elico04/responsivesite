@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/imagegallery.css">
+    <link rel="shortcut icon" href="images/632750d27de61097031a51c1_webclip.jpg" type="images/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Aries Image Gallery</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/ariesicon.jpg" alt="Click Here to return to homepage" title="Click Here"></a>
+        <h2>Aries</h2>
+        <button id="showNavigation" data-visible="false"></button>
+        <i onclick="showMenu()" id="hamburger-icon" class="fa-solid fa-bars"></i>
+        <i onclick="hideMenu()" id="x-icon" class="fa-solid fa-xmark"></i>
+        <nav id="navigation" data-visible="false">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="imagegallery.html">Image Gallery</a></li>
+                <li><a href="videogallery.html">Video Gallery</a></li>
+                <li><a href="carousel.html">Image Carousel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Photo Grid -->
+        <div class="row"> 
+            <div class="column">
+                <img src="images/image-gallery/1.jpg" alt="">
+                <img src="images/image-gallery/2.jpg" alt="">
+                <img src="images/image-gallery/3.webp" alt="">
+                <img src="images/image-gallery/4.png" alt="">
+                <img src="images/image-gallery/5.jpg" alt="">
+                <img src="images/image-gallery/6.jpg" alt="">
+            </div>
+            
+            <div class="column">
+                
+                <img src="images/image-gallery/7.jpg" alt="">
+                <img src="images/image-gallery/8.jpg" alt="">
+                <img src="images/image-gallery/9.jpg" alt="">
+                <img src="images/image-gallery/10.jpg" alt="">
+                
+            </div> 
+            
+            <div class="column">
+                <img src="images/image-gallery/11.jpg" alt="">
+                <img src="images/image-gallery/12.webp" alt="">
+                <img src="images/image-gallery/13.jpg" alt="">
+                <img src="images/image-gallery/14.jpg" alt="">
+                <img src="images/image-gallery/15.jpg" alt="">
+                <img src="images/image-gallery/16.webp" alt="">
+                
+            </div>
+            
+            <div class="column">
+                <img src="images/image-gallery/17.jpg" alt="">
+                <img src="images/image-gallery/18.jpg" alt="">
+                <img src="images/image-gallery/19.jpg" alt="">
+                <img src="images/image-gallery/20.webp" alt="">
+                <img src="images/image-gallery/21.jpg" alt="">
+                <img src="images/image-gallery/22.jpg" alt="">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright"></span> Eric Lico</p>
+    </footer>
+
+        <!-- Javascript - Get Current Year for the Footer -->
+        <script src="js/scripts.js"></script>
+        <script>
+            window.onload = function() {
+                var d = new Date();
+                document.getElementById("copyright").innerHTML = d.getFullYear();
+            }
+        </script>
+</body>
+</html>
